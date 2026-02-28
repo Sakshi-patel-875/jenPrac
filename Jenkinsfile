@@ -21,7 +21,6 @@ pipeline {
             junit 'target/surefire-reports/*.xml'
         }
 
-    post {
         success {
             echo 'Build Successful! All JUnit tests passed.'
         }
